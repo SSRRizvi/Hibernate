@@ -29,7 +29,7 @@ INSERT INTO `department` (`deptId`, `deptName`, `deptLocation`) VALUES
 
 	CREATE TABLE IF NOT EXISTS `employee` (
 	  `empId` INT PRIMARY KEY  AUTO_INCREMENT,
-	  `empDeptId` decimal(10,0) DEFAULT NOT NULL,
+	  `empDeptId` INT DEFAULT NOT NULL,
 	  `empName` varchar(200) DEFAULT NULL,
 	  `empAddress` varchar(500) DEFAULT NULL,
 	  `empAge` decimal(3,0) DEFAULT NULL,
