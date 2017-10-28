@@ -1,4 +1,4 @@
-# Hibernate
+.# Hibernate
 Hibernate Complex example with simple solution
  1. A OneToMany relationship in Java is where the source object has an attribute that stores a collection of target objects and 
     if those target objects had the inverse relationship back to the source object it would be a ManyToOne relationship. 
@@ -16,7 +16,7 @@ Hibernate Complex example with simple solution
  5. If the Collection is defined using generics to specify the element type, the associated target entity class does not need to be specified
 
  6. @ManyToMany – Is used to create many-to-many relationship between Employee and Meeting entities. 
-    If the Collection is defined using generics to specify the element type, the associated target entity class does not need to be specified;
+    If the Collection is defined using generics to specify the element type, the associated target entity class does not need to be specified,
     otherwise it must be specified. 
 
  7. Every many-to-many association has two sides, the owning side and the non-owning/inverse side. 
