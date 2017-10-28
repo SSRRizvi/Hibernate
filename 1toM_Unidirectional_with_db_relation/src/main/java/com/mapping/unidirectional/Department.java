@@ -31,6 +31,8 @@ public class Department implements Serializable{
 	
 	@OneToMany(targetEntity=Employee.class , cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinColumn(name="empDeptId")
+	/*@MapKey(name="name") // employee class property, can be any name of employee class which you want work as key of map 
+	private Map<String, Employee> employeeList = new HashMap<String,Employee>(); */
 	private Set<Employee> employeeList = new HashSet<Employee>();
 	
 	public int getId() {
