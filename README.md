@@ -1,5 +1,6 @@
 
 
+
 .# Hibernate
 Hibernate Complex example with simple solution : 
  1. A OneToMany relationship in Java is where the source object has an attribute that stores a collection of target objects and 
@@ -25,13 +26,16 @@ Hibernate Complex example with simple solution :
     The join table is specified on the owning side. If the association is bidirectional, either side may be designated as the owning side. 
 
 8. @MapKey is used when the entity is returning Map. Map is key value pair. So to decide what should be the key of map, @MapKey use name      as an attribute which would ne key of map
+
    i.e
-      @MapKey(name="name") // employee class property, can be any name of employee class which you want work as key of map 
-      private Map<String, Employee> employeeList = new HashMap<String,Employee>();
+   
+     @MapKey(name="name") // employee class property, can be any name of employee class which you want work as key of map 
+     private Map<String, Employee> employeeList = new HashMap<String,Employee>();
       
 9. @OrderBy("column(property) name ASC/DESC") : This annotation is used to define order of fetehed entity list/set
    
    i.e
+   
      @OneToMany(targetEntity=Employee.class , cascade=CascadeType.ALL, fetch=FetchType.EAGER)
      @JoinColumn(name="empDeptId")
      @OrderBy("age ASC") // property name
