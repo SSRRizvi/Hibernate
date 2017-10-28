@@ -1,5 +1,5 @@
-.# Hibernate
-Hibernate Complex example with simple solution
+# Hibernate
+Hibernate Complex example with simple solution : 
  1. A OneToMany relationship in Java is where the source object has an attribute that stores a collection of target objects and 
     if those target objects had the inverse relationship back to the source object it would be a ManyToOne relationship. 
  2. All relationships in Java and JPA are unidirectional, in that if a source object references a target object there is 
